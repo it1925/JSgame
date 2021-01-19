@@ -3,8 +3,9 @@
     margin: 0;
 }
 #canvas1{
-    width: 1000px;
-    height: 800px;
+    background-image: "background.png";
+    width: innerWidth;
+    height: innerHeigh;
     border: 1px black solid;
     position: absolute;
     top: 50%;
