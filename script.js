@@ -1,8 +1,8 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
 //makeing our canvas across whole screen
-canvas.width = innerWidth;
-canvas.height = innerHeight;
+canvas.width = innerWidth -1;
+canvas.height = innerHeight-200;
 const x = canvas.width/2;
 const y = canvas.height/2;
 const keys = [];
@@ -112,7 +112,7 @@ function animate(){
         let dist = Math.hypot(player.x + player.width/2 - enemy.x, player.y + player.height/2 - enemy.y);
         //if our player will get too close to an enemy game will stop animatin (but will not stop spawning enemies)
         if(dist - enemy.radius - (player.width+player.height)/6 < 1){
-
+            alert("u lose press F5 to restart");
             cancelAnimationFrame(animationId);
         }
         else if(enemy.x + enemy.radius < 0 || enemy.x - enemy.radius > canvas.width || enemy.y + enemy.radius < 0 || enemy.y - enemy.radius > canvas.height){
@@ -202,7 +202,7 @@ window.addEventListener("keyup", function(event){
 });
 
 //how to move player and lazy way of telling it to him
-console.log("move player useing W S A D\n W-up\n S-down\n A-left\n D-right");
+console.log("move player useing W S A D\n W-up\n S-down\n A-left\n D-right\n mouse click-shoot");
 function move (){
     if (keys["w"] && player.y > 0){
         player.y -= player.speed;
