@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
 //makeing our canvas across whole screen
 canvas.width = innerWidth -1;
-canvas.height = innerHeight-200;
+canvas.height = innerHeight-70;
 const x = canvas.width/2;
 const y = canvas.height/2;
 const keys = [];
