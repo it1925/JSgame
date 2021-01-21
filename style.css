@@ -12,39 +12,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/*
-#game{
-    width: 750px;
-    height: 200px;
-    border: 1px solid black;
+.gameUi {
+    height: 120px;
+    width: 290px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20%;
+    margin-left: 43%;
+    position: fixed;
+    text-align: center;
 }
-#character{
-    width: 30px;
-    height: 50px;
-    background-color: rgb(255, 0, 0);
-    position: relative;
-    top: 150px;
-    
+button {
+    background-color: rgb(0, 153, 255);
+    color: rgb(255, 255, 255);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
 }
-#block{
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    position: relative;
-    top: 130px;
-    left: 730px;
-    animation: block 1s infinite linear;
-}
-.animate{
-    animation: jump 700ms;
-}
-@keyframes block{
-    0%{left: 730px;}
-    100%{left:-40px;}
-}
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 60px;}
-    70%{top: 60px;}
-    100%{top: 150px;}
-}*/
